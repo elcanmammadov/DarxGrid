@@ -1,71 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
 	--sky: #2096da;
-  }
-  .container {
+}
+.container {
 	max-width: 960px;
 	margin: auto;
-  }
-  h1 {
+}
+h1 {
 	text-align: center;
 	padding: 0;
 	font: 1em 'Myriad Pro';
 	color: #b5b5b5;
 	text-transform: uppercase;
-  }
-  h2 {
+}
+h2 {
 	margin: 0 5px;
 	font: .8em/1.5 'Myriad Pro';
 	color: #b5b5b5;
 	text-transform: capitalize;
-  }
-  .info {
+}
+.info {
 	color: #b5b5b5;
 	margin: 5px 0 0 5px;
 	text-transform: uppercase;
-  }
-  .info span {
+}
+.info span {
 	color: #838080;
 	margin: 5px 0 0 5px;
 	font: .7em/1.5 'Myriad Pro';
-  }
-  .hr {
+}
+.hr {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	margin: 10px 0 20px 0;
-  }
-  hr {
+}
+hr {
 	margin: auto 10px;
 	background: #777;
 	border: 0;
 	min-width: 50px;
 	height: 2px;
-  }
-  header {
+}
+header {
 	background: #1b1b1b;
 	border-bottom: 5px solid var(--sky);
-  }
-  header .container {
+}
+header .container {
 	display: grid;
 	text-align: center;
-  }
-  header nav p {
+}
+header nav p {
 	font: .9em 'Open Sans', sans-serif;
 	color: #777;
 	margin: 10px 0 0 0 ;
-  }
-  header nav ul li {
+}
+header nav ul li {
 	padding: 10px 0 5px 20px;
-  }
-  header nav ul a {
+}
+header nav ul a {
 	font: 1.1em 'Righteous';
 	color: #fff;
 	text-transform: uppercase;
 	padding: 7px 10px;
-  }
-  header nav ul a:hover {
+}
+header nav ul a:hover {
 	background: var(--sky);
-  }
-  #icons a {
+}
+.active {
+	background-color: var(--sky);
+}
+#icons a {
 	color: #777;
 	display: inline-block;
 	width: 25px;
@@ -75,16 +117,16 @@
 	text-align: center;
 	padding: 5px 0;
 	margin: 5px 0 5px 5px;
-  }
-  #logo {
+}
+#logo {
 	background: var(--sky);
 	padding: 35px 0;
-  }
-  main {
-	background: url('../img/bg.jpg');
+}
+main {
+	background: url('./img/bg.jpg');
 	padding: 50px 0 120px 0;
-  }
-  main .container div {
+}
+main .container div {
 	background: #2d2d2d center/cover no-repeat;
 	opacity: 0.5;
 	height: 50vh;
@@ -93,62 +135,26 @@
 	font: italic 1.5em/1.25 'Georgia';
 	color: #777;
 	text-align: center;
-  }
-  .half {
+}
+.half {
 	height: 40vh !important;
-  }
-  .double {
+}
+.double {
 	height: 100vh !important;
-  }
-  main .container div:hover {
+}
+main .container div:hover {
 	opacity: 1;
-  }
-  #a01, #a07, #a09, #a14, #a15 {
-	background-image: url('../img/quots.png');
-  }
-  #a02 {
-	background-image: url('../img/a02.jpg');
-  }
-  #a03 {
-	background-image: url('../img/a03.jpg');
-  }
-  #a04 {
-	background-image: url('../img/a04.jpg');
-  }
-  #a05 {
-	background-image: url('../img/a05.jpg');
-  }
-  #a06 {
-	background-image: url('../img/a06.jpg');
-  }
-  #a08 {
-	background-image: url('../img/a08.jpg');
-  }
-  #a10 {
-	background-image: url('../img/a10.jpg');
-  }
-  #a11 {
-	background-image: url('../img/a11.jpg');
-  }
-  #a12 {
-	background-image: url('../img/a12.jpg');
-  }
-  #a13 {
-	background-image: url('../img/a13.jpg');
-  }
-  #a16 {
-	background-image: url('../img/a16.jpg');
-  }
-  footer {
+}
+footer {
 	background: #1b1b1b !important;
-  }
-  #iconf {
+}
+#iconf {
 	padding: 20px 0;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto;
 	justify-content: center;
-  }
-  #iconf a {
+}
+#iconf a {
 	margin: 0 5px 0 0;
 	display: inline-block;
 	text-align: center;
@@ -157,146 +163,145 @@
 	width: 40px;
 	background: #232323;
 	font-size: 1em;
-  }
-  #iconf i:hover {
+}
+#iconf i:hover {
 	color: silver;
-  }
-  #iconf a i {
+}
+#iconf a i {
 	cursor: pointer;
 	margin: auto;
 	padding: 13px;
 	color: #777;
 	display: grid;
-  }
-  #footer2 {
-	justify-content: center;
+}
+#footer2 {
 	display: grid;
+	justify-content: center;
 	grid-template-columns: auto;
 	padding: 30px 0;
-  }
-  #footerpic {
+}
+#footerpic {
 	display: grid;
 	grid-template-columns: auto auto auto;
-  }
-  #footerpic img, .fimg {
+}
+#footerpic img, .fimg {
 	border: 5px solid #272727;
 	height: 70px;
 	width: 85px;
-  }
-  .ftpic {
+}
+.ftpic {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: start;
-  }
-  .fa-comment-alt {
+}
+.fa-comment-alt {
 	font: 0.7em 'Myriad Pro';
 	color: #777;
-  }
-  form {
+}
+form {
 	display: grid;
-  }
-  #name, #email {
+}
+#name, #email {
 	background: #272727;
 	border: 0;
 	padding: 5px;
 	margin: 5px;
 	color: #fff;
-  }
-  #sub {
+}
+#sub {
 	color: #fff;
 	border: 0;
 	margin: 20px 0 0 5px;
 	background: #262626;
 	height: 40px;
 	width: 100px;
-  }
-  #fbg {
+}
+#fbg {
 	background: var(--sky) !important;
-  }
-  #copyright div {
+}
+#copyright div {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	justify-content: center;
-  }
-  #copyright p {
+}
+#copyright p {
 	text-align: center;
 	margin: 5px;
-  }
-  #copyright p, #copyright a {
+}
+#copyright p, #copyright a {
 	font: 0.8em 'Myriad Pro';
 	color: #fff;
-  }
-  #copyright a {
+}
+#copyright a {
 	margin: 5px;
 	text-transform: uppercase;
-  }
-  #copyright a:hover {
+}
+#copyright a:hover {
 	color: silver;
-  }
-  @media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 768px) {
 	header .container {
-	  grid-template-columns: 130px auto;
+		grid-template-columns: 130px auto;
 	}
 	header nav {
-	  display: grid;
-	  align-content: space-between;
-	  text-align: right;
+		display: grid;
+		align-content: space-between;
+		text-align: right;
 	}
 	header nav ul li, header nav p, #icons {
-	  display: inline-block;
+		display: inline-block;
 	}
 	main .container {
-	  display: grid;
-	  grid-template-columns: 25% 25% 25% 25%;
-	  grid-gap: 15px;
-	  height: 220vh;
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-gap: 15px;
+		height: 220vh;
 	}
 	main .container div {
-	  height: auto !important;
+		height: auto !important;
 	}
 	#a03 {
-	  grid-area: 1 / 3 / span 2 / span 1;
+		grid-area: 1 / 3 / span 2 / span 1;
 	}
 	#a10 {
-	  grid-area: 3 / 3 / span 1 / span 2;
+		grid-area: 3 / 3 / span 1 / span 2;
 	}
 	#a11 {
-	  grid-area: 4 / 1 / span 2 / span 1;
+		grid-area: 4 / 1 / span 2 / span 1;
 	}
 	#a16 {
-	  grid-area: 5 / 3 / span 1 / span 2;
+		grid-area: 5 / 3 / span 1 / span 2;
 	}
 	#footer2 {
-	  justify-content: space-between;
-	  grid-template-columns: auto auto auto;
+		justify-content: space-between;
+		grid-template-columns: auto auto auto;
 	}
 	#iconf {
-	  display: grid;
-	  grid-template-columns: auto auto auto auto auto auto auto;
-	  justify-content: space-between;
+		display: grid;
+		grid-template-columns: auto auto auto auto auto auto auto;
+		justify-content: space-between;
 	}
 	#iconf a {
-	  margin: -70px 0 0 0;
-	  height: 100px;
-	  width: 100px;
-	  font-size: 3em;
+		margin: -70px 0 0 0;
+		height: 100px;
+		width: 100px;
+		font-size: 3em;
 	}
 	#iconf a i {
-	  margin: 15px !important;
+		margin: 15px !important;
 	}
 	#name, #email {
-	  height: 30px;
+		height: 30px;
 	}
 	#sub {
-	  margin: 20px 0 0 153px;
+		margin: 20px 0 0 153px;
 	}
 	#copyright {
-	  display: grid;
-	  grid-template-columns: auto auto;
-	  justify-content: space-between;
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
 	}
 	#copyright div {
-	  grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto auto;
 	}
-  }
-  
+}
